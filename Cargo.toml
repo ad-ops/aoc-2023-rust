@@ -10,3 +10,7 @@ regex = "1.10.2"
 [[bin]]
 name = "1"
 path = "src/day1.rs"
+
+[[bin]]
+name = "2"
+path = "src/day2.rs"
