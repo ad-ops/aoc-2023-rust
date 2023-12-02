@@ -27,13 +27,17 @@ fn part2(input: &str) -> u32 {
             static RE: OnceLock<Regex> = OnceLock::new();
             static REV_RE: OnceLock<Regex> = OnceLock::new();
             let first = RE
-                .get_or_init(|| Regex::new(r"(\d|one|two|three|four|five|six|seven|eight|nine)").unwrap())
+                .get_or_init(|| {
+                    Regex::new(r"(\d|one|two|three|four|five|six|seven|eight|nine)").unwrap()
+                })
                 .find(line)
                 .expect("should find a first value")
                 .as_str();
             let reverse = line.chars().rev().collect::<String>();
             let last = REV_RE
-                .get_or_init(|| Regex::new(r"(\d|eno|owt|eerht|ruof|evif|xis|neves|thgie|enin)").unwrap())
+                .get_or_init(|| {
+                    Regex::new(r"(\d|eno|owt|eerht|ruof|evif|xis|neves|thgie|enin)").unwrap()
+                })
                 .find(&reverse)
                 .expect("msg")
                 .as_str();
@@ -49,7 +53,7 @@ fn part2(input: &str) -> u32 {
                     "seven" | "neves" | "7" => 7,
                     "eight" | "thgie" | "8" => 8,
                     "nine" | "enin" | "9" => 9,
-                    _ => panic!("should never happen")
+                    _ => panic!("should never happen"),
                 }
             }
 
