@@ -73,7 +73,7 @@ fn part2(input: &str) -> u32 {
 }
 
 fn main() {
-    println!("Running day1");
+    println!("Running day2");
 
     let input = include_str!("../tests/02_1.txt");
     let time = Instant::now();
