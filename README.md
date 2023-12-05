@@ -16,3 +16,8 @@ I started making a plan to do a lookup in a hashmap for the coordinates, but the
 
 ## Day 4
 Was a pretty nice and standard task. This time building structs to handle the input.
+
+## Day 5
+Started building HashMaps, but that quickly became to hard so with my own structs it was more manageble. Still it took to long for part 2 so I added `Rayon` to use all cores. It still took almost 2 min on my MacBook M1.
+
+Tried to save all processed ranges and ignore seeds that was in that range. It was a bit faster, but not significant...
