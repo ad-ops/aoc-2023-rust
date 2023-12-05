@@ -14,3 +14,5 @@ Feels like I should have parsed the data into real structs, but it was a simple 
 ## Day 3
 I started making a plan to do a lookup in a hashmap for the coordinates, but then I forgot about that and just iterated over everything. Would be interesting to see the performance differences...
 
+## Day 4
+Was a pretty nice and standard task. This time building structs to handle the input.
