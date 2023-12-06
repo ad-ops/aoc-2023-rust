@@ -18,6 +18,9 @@ I started making a plan to do a lookup in a hashmap for the coordinates, but the
 Was a pretty nice and standard task. This time building structs to handle the input.
 
 ## Day 5
-Started building HashMaps, but that quickly became to hard so with my own structs it was more manageble. Still it took to long for part 2 so I added `Rayon` to use all cores. It still took almost 2 min on my MacBook M1.
+Started building HashMaps, but that quickly became to hard so with my own structs it was more manageble. Still it took to long for part 2 so I added `Rayon` to use all cores. It still took almost 2 min on my MacBook M1 and 40s on my UM790 Pro.
 
 Tried to save all processed ranges and ignore seeds that was in that range. It was a bit faster, but not significant...
+
+## Day 6
+This feels like it was the simplest task this AoC. I was worried that it would be to big to brute-force, but it took only 27ms on my UM790 Pro. The only thing I needed to change was to use `u64`.
