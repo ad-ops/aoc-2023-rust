@@ -24,3 +24,7 @@ Tried to save all processed ranges and ignore seeds that was in that range. It w
 
 ## Day 6
 This feels like it was the simplest task this AoC. I was worried that it would be to big to brute-force, but it took only 27ms on my UM790 Pro. The only thing I needed to change was to use `u64`.
+
+## Day 7
+For me this was the hardest task because I first implemented real poker-rules for determining the value. Everything became much simpler when I read the instructions correctly, but it meant many things were designed for a more advanced case which took some time to undo. It was nice to be able to lean on Rust's type system and deriving `Ord` to get the value of a hand.
+
