@@ -28,3 +28,6 @@ This feels like it was the simplest task this AoC. I was worried that it would b
 ## Day 7
 For me this was the hardest task because I first implemented real poker-rules for determining the value. Everything became much simpler when I read the instructions correctly, but it meant many things were designed for a more advanced case which took some time to undo. It was nice to be able to lean on Rust's type system and deriving `Ord` to get the value of a hand.
 
+## Day 8
+Part 1 was simple, but for part 2 I struggled since I was unsure if it really was a stable cyclic graph. I went for it in the end anyway, but it was not a straight line...
+
